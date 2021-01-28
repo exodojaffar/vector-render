@@ -14,7 +14,7 @@ def scale(vectors:list, values:tuple):
 	for vector in vectors:
 		new_vector = [(original*transformation) for original, transformation in zip(vectors, values)]
 
-	pass
+	return new_vectors
 
 def translate(vectors:list, values: tuple):
 	"""
