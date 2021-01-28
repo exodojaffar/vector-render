@@ -4,7 +4,7 @@ import subprocess as run
 run_in_bash = run.run
 
 from time import sleep
-
+from transformations import scale
 """
 A parte de vetores, mapa e transformação pode ser transoformada
 em POO, baseado em classe e metodo.
@@ -42,6 +42,8 @@ def atualizar_mapa():
 	middle_x = get_middle(WIDTH)
 	middle_Y = get_middle(HEIGHT)
 
+
+
 	pass
 
 def draw():
@@ -55,6 +57,10 @@ def draw():
 	pass
 
 def main():
+	global VERTICES
+
+	VERTICES = scale(VERTICES, (3,3))
+
 	run = True
 
 	while run:
