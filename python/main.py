@@ -3,6 +3,11 @@
 import subprocess as run
 run_in_bash = run.run
 
+"""
+A parte de vetores, mapa e transformação pode ser transoformada
+em POO, baseado em classe e metodo.
+"""
+
 def get_width() -> int:
 	inp = len(input("Digite ate o final da tela:\n"))
 
@@ -14,7 +19,7 @@ def get_width() -> int:
 def get_midle(value):
 	# Some 1 caso queria o real meio
 	# Não some 1 caso queria o meio ja para colocar numa list
-	
+
 	return (value//2) #+ 1
 
 caracteres_sombra = "# @ $ & O 8 [ + - ~".split(' ')
