@@ -53,7 +53,15 @@ def draw():
 	pass
 
 def main():
-	teste_sombra()
+	run = True
+
+	while run:
+		try:
+
+			atualizar_mapa()
+			draw()
+		except KeyboardInterrupt:
+			run = False
 
 	pass
 
