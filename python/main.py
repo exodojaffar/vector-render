@@ -16,7 +16,7 @@ def get_width() -> int:
 
 	return inp
 
-def get_midle(value):
+def get_middle(value):
 	# Some 1 caso queria o real meio
 	# Não some 1 caso queria o meio ja para colocar numa list
 
@@ -27,7 +27,20 @@ WIDTH = get_width()
 HEIGHT = 21
 
 MAPA = [[' ']*WIDTH]*HEIGHT
-VERTICES = [[-1,0], [0,1], [1,0]]
+VERTICES = [[-1,0], [0,1], [1,0]] # Posição dos vertices de um triangulo
+
+
+def clear_terminal():
+	run_in_bash('clear')
+	pass
+
+def atualizar_mapa():
+	global MAPA, VERTICES
+
+	middle_x = get_middle(WIDTH)
+	middle_Y = get_middle(HEIGHT)
+
+	pass
 
 def draw():
 	clear_terminal()
@@ -37,10 +50,6 @@ def draw():
 			print(f"{elemento}", end="")
 		print()
 
-	pass
-
-def clear_terminal():
-	run_in_bash('clear')
 	pass
 
 def main():
