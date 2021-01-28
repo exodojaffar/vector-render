@@ -33,14 +33,14 @@ for y in range(0, HEIGHT):
 	linha = list()
 	
 	for x in range(0, WIDTH):
-		linha.append(' ')
+		linha.append('-')
 
 	MAPA.append(linha)
 
 	pass
 
 
-VERTICES = [[-1,0], [0,1], [1,0]] # Posição dos vertices de um triangulo
+VERTICES = [[-1,0], [3,1], [1,0]] # Posição dos vertices de um triangulo
 
 
 def clear_terminal():
@@ -61,8 +61,10 @@ def atualizar_mapa():
 
 	for vertice in VERTICES:
 		X, Y = vertice 
-
+	
 		MAPA[middle_Y - Y][middle_X + X] = caracteres_sombra[0]
+
+	MAPA[middle_Y ][middle_X ] = caracteres_sombra[1]
 
 	pass
 
