@@ -9,7 +9,10 @@ def scale(vectors:list, values:tuple):
 	Second value is the tranformation on Y
 
 	"""
+	new_vectors = list()
 
+	for vector in vectors:
+		new_vector = [(original*transformation) for original, transformation in zip(vectors, values)]
 
 	pass
 
