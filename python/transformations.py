@@ -12,7 +12,9 @@ def scale(vectors:list, values:tuple):
 	new_vectors = list()
 
 	for vector in vectors:
-		new_vector = [(original*transformation) for original, transformation in zip(vectors, values)]
+		new_vector = [original*transformation for original, transformation in zip(vector, values)]
+
+		new_vectors.append(new_vector)
 
 	return new_vectors
 
