@@ -73,19 +73,14 @@ def draw():
 def main():
 	global VERTICES
 
-	VERTICES =  scale(VERTICES, (3,3))
+	VERTICES =  scale(VERTICES, (1,2))
 
 	run = True
 
 	while run:
-		try:
-
-			atualizar_mapa()
-			draw()
-			sleep(0.5)
-		except KeyboardInterrupt:
-			run = False
-
+		atualizar_mapa()
+		draw()
+		sleep(0.5)
 	pass
 
 if __name__ == '__main__':
