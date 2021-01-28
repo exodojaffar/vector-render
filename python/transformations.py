@@ -28,7 +28,7 @@ def translate(vectors:list, values: tuple):
 	new_vectors = list()
 
 	for vector in vectors:
-		new_vector = [(postion+trans) for postion, trans in zip(vector, values)]
+		new_vector = [(original+transformation) for original, transformation in zip(vector, values)]
 
 		new_vectors.append(new_vector)
 
