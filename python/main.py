@@ -43,34 +43,10 @@ def clear_terminal():
 	run_in_bash('clear')
 	pass
 
-def teste_sombra():
-
-	for x in range(0,HEIGHT):
-		for y in range(0, WIDTH):
-			value = (x)%10
-			print(caracteres_sombra[value], end='')
-		print()
-
-	pass
-
-def test():
-	MENU = """ MENU
-0 -> Teste Sombra
-1 -> Teste Limpar tela
-2 -> Teste Desenha Triangulo
-"""
-	OPs = [teste_sombra, clear_terminal, draw]
-
-	op = int(input(MENU))
-
-	OPs[op]()
-
-	pass
-
 def main():
 	teste_sombra()
 
 	pass
 
 if __name__ == '__main__':
-	test()
+	main()
