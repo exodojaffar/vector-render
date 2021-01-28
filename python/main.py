@@ -3,6 +3,8 @@
 import subprocess as run
 run_in_bash = run.run
 
+from time import sleep
+
 """
 A parte de vetores, mapa e transformação pode ser transoformada
 em POO, baseado em classe e metodo.
@@ -60,6 +62,7 @@ def main():
 
 			atualizar_mapa()
 			draw()
+			sleep(0.5)
 		except KeyboardInterrupt:
 			run = False
 
