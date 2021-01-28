@@ -47,6 +47,12 @@ def clear_terminal():
 	run_in_bash('clear')
 	pass
 
+def atualizar_vertices():
+	global VERTICES
+
+	VERTICES = scale(VERTICES, (2,2))
+	pass
+
 def atualizar_mapa():
 	global MAPA, VERTICES
 
@@ -71,13 +77,12 @@ def draw():
 	pass
 
 def main():
-	global VERTICES
-
-	VERTICES =  scale(VERTICES, (1,2))
-
 	run = True
 
+	atualizar_vertices()
+
 	while run:
+		# atualizar_vertices()
 		atualizar_mapa()
 		draw()
 		sleep(0.5)
