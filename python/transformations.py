@@ -45,8 +45,9 @@ def all(transformation_matriz):
 
 def test():
 	vectors = [[-1,0], [0,1], [1,0]]
-	new_vectors = translate(vectors, (2,1))
-	print(new_vectors)
+	
+	new_vectors_translated = translate(vectors, (2,1))
+	print(new_vectors_translated)
 
 	pass
 
