@@ -28,7 +28,18 @@ caracteres_sombra = "# @ $ & O 8 [ + - ~".split(' ')
 WIDTH = get_width()
 HEIGHT = 21
 
-MAPA = [[' ']*WIDTH]*HEIGHT
+MAPA = list()
+for y in range(0, HEIGHT):
+	linha = list()
+	
+	for x in range(0, WIDTH):
+		linha.append(' ')
+
+	MAPA.append(linha)
+
+	pass
+
+
 VERTICES = [[-1,0], [0,1], [1,0]] # Posição dos vertices de um triangulo
 
 
@@ -39,10 +50,13 @@ def clear_terminal():
 def atualizar_mapa():
 	global MAPA, VERTICES
 
-	middle_x = get_middle(WIDTH)
+	middle_X = get_middle(WIDTH)
 	middle_Y = get_middle(HEIGHT)
 
+	for vertice in VERTICES:
+		X, Y = vertice 
 
+		MAPA[middle_Y - Y][middle_X + X] = caracteres_sombra[0]
 
 	pass
 
@@ -59,7 +73,7 @@ def draw():
 def main():
 	global VERTICES
 
-	VERTICES = scale(VERTICES, (3,3))
+	VERTICES =  scale(VERTICES, (3,3))
 
 	run = True
 
