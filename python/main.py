@@ -21,13 +21,13 @@ caracteres_sombra = "# @ $ & O 8 [ + - ~".split(' ')
 WIDTH = get_width()
 HEIGHT = 21
 
-MATRIZ = [[' ']*WIDTH]*HEIGHT
+MAPA = [[' ']*WIDTH]*HEIGHT
 VERTICES = [[-1,0], [0,1], [1,0]]
 
 def draw():
 	clear_terminal()
 
-	for linha in MATRIZ:
+	for linha in MAPA:
 		for elemento in linha:
 			print(f"{elemento}", end="")
 		print()
