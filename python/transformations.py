@@ -41,11 +41,16 @@ def rotate(vectors:list, deg: float):
 	pass
 
 def all(transformation_matriz):
+	"""
+	Essa função ira fazer tudo usando duas matrizes:
+		- Original
+		- Transformação
+	"""
 	pass
 
 def test():
 	vectors = [[-1,0], [0,1], [1,0]]
-	
+
 	new_vectors_translated = translate(vectors, (2,1))
 	print(new_vectors_translated)
 
