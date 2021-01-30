@@ -23,3 +23,9 @@ def test():
 	OPs[op]()
 
 	pass
+
+def test_pixel():
+	pass
+
+if __name__ == '__main__':
+	test_pixel()
